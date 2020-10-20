@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import StudentRegistration from "./component/student-registration/student-registration.component";
+import logo from "./logo.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="container">
+      <div className="row mt-3">
+        <img
+          src={logo}
+          className="image rounded mx-auto"
+          height={100}
+          alt="logo"
+        />
+      </div>
+      <div className="text-center">
+        <h4
+          className="display-4 mx-auto title"
+          style={{ fontFamily: "Raleway", fontSize: "2.5rem" }}
         >
-          Learn React
-        </a>
-      </header>
+          Welcome to Jibannagar Degree College App
+        </h4>
+      </div>
+      <div className="row">
+        <div className="col">
+          <StudentRegistration />
+        </div>
+      </div>
     </div>
   );
 }
